@@ -8,7 +8,7 @@ import Students from "./pages/Students";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/pplg-1">
       <div className="min-h-screen bg-slate-50 text-slate-900">
         <Navbar />
         <Routes>

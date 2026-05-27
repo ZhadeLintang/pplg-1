@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
+// Ganti 'pplg-1' dengan nama repo Anda jika berbeda
 export default defineConfig({
-  plugins: [react()],
-  base: '/pplg-1/', // Wajib ditambahkan: /nama-repo-kamu/
+  base: '/pplg-1/',
+  plugins: [react()]
 })
