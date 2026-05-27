@@ -1,17 +1,6 @@
 import { motion } from "framer-motion";
 import { studentsData } from "../data/students";
 
-const getRoleColor = (role: string): string => {
-  const roleColors: Record<string, string> = {
-    "Frontend Developer": "from-blue-500 to-cyan-500",
-    "Backend Developer": "from-purple-500 to-pink-500",
-    "Full-stack Developer": "from-orange-500 to-red-500",
-    "Game Developer": "from-green-500 to-emerald-500",
-    "UI/UX Designer": "from-indigo-500 to-violet-500",
-  };
-  return roleColors[role] || "from-slate-500 to-slate-700";
-};
-
 export default function Students() {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -78,15 +67,11 @@ export default function Students() {
                       alt={student.name}
                       className="h-20 w-20 rounded-full border-2 border-white/20 object-cover shadow-md"
                     />
-                    <div className={`absolute -right-1 -top-1 h-5 w-5 rounded-full bg-gradient-to-br ${getRoleColor(student.role)} shadow-lg`} />
                   </div>
                 </div>
 
                 <div className="space-y-1">
                   <h3 className="text-lg font-semibold text-white">{student.name}</h3>
-                  <p className={`text-xs font-semibold uppercase tracking-widest bg-gradient-to-r ${getRoleColor(student.role)} bg-clip-text text-transparent`}>
-                    {student.role}
-                  </p>
                 </div>
               </div>
             </motion.article>

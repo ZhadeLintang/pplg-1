@@ -80,7 +80,7 @@ export default function Home() {
                 to="/students"
                 className="group relative inline-flex items-center justify-center rounded-full bg-orange-500 px-8 py-4 text-base font-bold text-white shadow-[0_0_20px_rgba(249,115,22,0.3)] transition-all hover:bg-orange-600 hover:shadow-[0_0_40px_rgba(249,115,22,0.5)] hover:-translate-y-1"
               >
-                Member PPLG 1
+                Meet Our Crew
               </Link>
               <Link
                 to="/about"
